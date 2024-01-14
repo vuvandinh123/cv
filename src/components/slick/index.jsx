@@ -3,7 +3,7 @@ function NextArrow(props) {
   return (
     <div
       className={
-        "absolute w-10 h-10 cursor-pointer rounded-full bg-[#0000003a] top-1/2 -right-3 z-10 justify-center items-center flex"
+        "absolute w-10 h-10 cursor-pointer rounded-full bg-[#0000003a] top-1/2 -translate-y-1/2 -right-3 z-10 justify-center items-center flex"
       }
       onClick={onClick}
     >
@@ -29,7 +29,7 @@ function PrevArrow(props) {
   return (
     <div
       className={
-        "absolute w-10 h-10 cursor-pointer rounded-full bg-[#0000003a] top-1/2 -left-3 z-10 justify-center items-center flex"
+        "absolute w-10 h-10 cursor-pointer -translate-y-1/2 rounded-full bg-[#0000003a] top-1/2 -left-3 z-10 justify-center items-center flex"
       }
       onClick={onClick}
     >

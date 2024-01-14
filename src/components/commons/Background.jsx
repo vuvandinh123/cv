@@ -6,19 +6,25 @@ const Background = () => {
       <div className="snowflakes" aria-hidden="true">
         <div className="snowflake text-white">❅</div>
         <div className="snowflake text-white">❅</div>
-        <div className="snowflake text-white">❆</div>
         <div className="snowflake text-white">❄</div>
+        <div className="snowflake text-white">🍁</div>
         <div className="snowflake text-white">❅</div>
-        <div className="snowflake text-white">❆</div>
+        <div className="snowflake text-white">✿</div>
+        <div className="snowflake text-white">🍁</div>
+        <div className="snowflake text-white">🍁</div>
         <div className="snowflake text-white">❄</div>
+        <div className="snowflake text-white">❄</div>
+        <div className="snowflake text-white">❄</div>
+        <div className="snowflake text-white">🍃</div>
+        <div className="snowflake text-white">❆</div>
         <div className="snowflake text-white">❅</div>
-        <div className="snowflake text-white">❆</div>
-        <div className="snowflake text-white">❄</div>
+        <div className="snowflake text-white">❅</div>
+        <div className="snowflake text-white">🍁</div>
       </div>
-      <div className="air air1"></div>
-      <div className="air air2"></div>
-      <div className="air air3"></div>
-      <div className="air air4"></div>
+      <div className="air dark:!hidden air1"></div>
+      <div className="air dark:!hidden air2"></div>
+      <div className="air dark:!hidden air3"></div>
+      <div className="air dark:!hidden air4"></div>
     </div>
   );
 };

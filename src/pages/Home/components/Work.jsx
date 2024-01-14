@@ -97,10 +97,35 @@ const Work = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="px-5 my-10 ">
-      <div className="flex justify-center items-center">
+      <div className="flex dark:text-white  justify-center items-center">
         <div className="xl:w-1/2">
           <h2 id="work" className="text-center text-3xl font-semibold mb-2">
             My Project
