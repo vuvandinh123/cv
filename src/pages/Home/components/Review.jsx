@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { postReviews } from "../../../firebase/fetchReviews";
-
 const Review = () => {
   const [data, setData] = useState({
     name: "",
@@ -13,17 +12,18 @@ const Review = () => {
     setData({ ...data, content: e.target.value });
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if(!data.name || !data.email || !data.content) return;
     const isPost = await postReviews(data);
     if (isPost) {
       setData({ name: "", email: "", content: "" });
-      // alert("Thanks for your review!");
+      alert("Thanks for your review!");
     } else {
       alert("Something went wrong, please try again!");
     }
   };
   return (
     <div>
-      <div className="flex items-center min-h-screen ">
+      <div className="flex items-center min-h-screen "  data-aos="zoom-in">
         <div className="container mx-auto">
           <div className="max-w-md mx-auto my-10 bg-white dark:bg-[#1e2329] shadow-lg p-5 rounded-md ">
             <div className="text-center">

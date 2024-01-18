@@ -7,12 +7,12 @@ const About = () => {
     <>
       <div className="flex lg:flex-row  flex-col-reverse">
         <div className="basis-2/3 dark:text-white pb-5">
-          <h1 className="lg:text-5xl text-center lg:text-start text-3xl mt-5 lg:mt-0 font-bold">{`I'm Vu Van Dinh`}</h1>
-          <h2 className="lg:text-5xl text-xl text-center lg:text-start font-bold">
+          <h1 className="lg:text-5xl text-center lg:text-start text-3xl mt-5 lg:mt-0 font-bold "  data-aos="fade-right">{`I'm Vu Van Dinh`}</h1>
+          <h2 className="lg:text-5xl text-xl text-center lg:text-start font-bold" data-aos="fade-left">
             <span className="text-yellow-500">Front-end</span>{" "}
             <span>Developer</span>
           </h2>
-          <p className="mt-5 text-sm text-center lg:text-start text-gray-500">
+          <p className="mt-5 text-sm text-center lg:text-start text-gray-500" data-aos="fade-up">
             I am passionate about front-end development to create user-friendly
             websites. With 1 years of experience working with HTML/CSS,
             JavaScript and ReactJS, I have developed strong capabilities in
@@ -30,7 +30,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="lg:ml-10 ml-3 flex justify-center lg:justify-start flex-shrink-0">
+        <div className="lg:ml-10 ml-3 flex justify-center lg:justify-start flex-shrink-0" data-aos="flip-left">
           <img className="w-[200px]" src={user} alt="" />
         </div>
       </div>

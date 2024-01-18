@@ -1,11 +1,10 @@
-import React from "react";
 import { FiFigma } from "react-icons/fi";
 import { Link } from "react-scroll";
-
+import { DataInfo } from "../../assets/data/info";
 const Footer = () => {
   return (
     <footer>
-      <div className="mt-20">
+      <div className="mt-20" data-aos="zoom-in-down">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421768.56566163094!2d105.97264223897628!3d10.848224809726016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2sus!4v1705139099875!5m2!1sen!2sus"
           width={"100%"}
@@ -18,8 +17,13 @@ const Footer = () => {
       </div>
       <div className="container flex dark:text-white flex-col mx-auto">
         <div className="flex flex-col items-center w-full mt-20">
-          <span className="mb-8 font-bold text-3xl">Vu Van Dinh</span>
-          <div className="flex flex-col items-center gap-6 mb-8">
+          <span className="mb-8 font-bold text-3xl" data-aos="fade-down">
+            Vu Van Dinh
+          </span>
+          <div
+            className="flex flex-col items-center gap-6 mb-8"
+            data-aos="fade-down"
+          >
             <div className="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
               <Link
                 to={"home"}
@@ -39,16 +43,16 @@ const Footer = () => {
               >
                 Education
               </Link>
-              <Link className="text-gray-400 cursor-pointer hover:text-gray-900 dark:hover:text-white">
+              <Link to={"/"} className="text-gray-400 cursor-pointer hover:text-gray-900 dark:hover:text-white">
                 Blog
               </Link>
-              <Link className="text-gray-400 cursor-pointer hover:text-gray-900 dark:hover:text-white">
+              <Link to={"/"} className="text-gray-400 cursor-pointer hover:text-gray-900 dark:hover:text-white">
                 Review
               </Link>
             </div>
             <div className="flex items-center gap-8">
-              <a
-                href="javascript:void(0)"
+              <Link
+                to={DataInfo.facebook}
                 className="text-grey-700 hover:text-grey-900"
               >
                 <svg
@@ -82,11 +86,8 @@ const Footer = () => {
                   </mask>
                   <g mask="url(#mask0_3320_6483)"></g>
                 </svg>
-              </a>
-              <a
-                href="javascript:void(0)"
-                className="text-grey-700 hover:text-grey-900"
-              >
+              </Link>
+              <Link to={"/"} className="text-grey-700 hover:text-grey-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -118,9 +119,9 @@ const Footer = () => {
                   </mask>
                   <g mask="url(#mask0_3320_6484)"></g>
                 </svg>
-              </a>
-              <a
-                href="javascript:void(0)"
+              </Link>
+              <Link
+                to={DataInfo.github}
                 className="text-grey-700 hover:text-grey-900"
               >
                 <svg
@@ -135,11 +136,8 @@ const Footer = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
-              <a
-                href="javascript:void(0)"
-                className="text-grey-700 hover:text-grey-900"
-              >
+              </Link>
+              <Link to={"/"} className="text-grey-700 hover:text-grey-900">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={18}
@@ -152,9 +150,8 @@ const Footer = () => {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
-              <a
-                href="javascript:void(0)"
+              </Link>
+              <Link to={DataInfo.facebook}
                 className="text-grey-700 hover:text-grey-900"
               >
                 <svg
@@ -188,16 +185,20 @@ const Footer = () => {
                   </mask>
                   <g mask="url(#mask0_3320_6487)"></g>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center" data-aos="fade-down">
             <p className="text-base font-normal leading-7 text-center text-grey-700">
               2024 © Created by{" "}
               <span className="text-yellow-500">Vu Van Dinh</span>
             </p>
           </div>
-          <div className="flex items-center">
+          <div
+            className="flex items-center"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <p className="text-base font-normal flex gap-2 items-center leading-7 text-center text-grey-700">
               <FiFigma className="" color="red"></FiFigma>
               Design by{" "}

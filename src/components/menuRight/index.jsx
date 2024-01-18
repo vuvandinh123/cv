@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { useTime } from "../../hook";
 import { FaSun } from "react-icons/fa6";
 import { MdDarkMode } from "react-icons/md";
+import { Darkmod } from "../commons";
 const MenuRight = () => {
   const [activeLink, setActiveLink] = useState(false);
   const [activeDarkMode, setActiveDarkMode] = useState(false);
@@ -29,20 +30,13 @@ const MenuRight = () => {
   const handleClose = () => setActiveLink(false);
   const { hours, minutes, seconds } = useTime();
   return (
-    <div className="bg-white dark:bg-[#1e2329] lg:h-screen w-screen h-[70px] fixed bottom-0 right-0 left-0 lg:left-auto lg:top-0 lg:w-[100px] lg:mr-10">
+    <div
+      className="bg-white dark:bg-[#1e2329] lg:h-screen w-screen h-[70px] fixed bottom-0 right-0 left-0 lg:left-auto lg:top-0 lg:w-[100px] lg:mr-10"
+      data-aos="fade-left"
+    >
       {/* Dark mode */}
-
       <div className="mt-10 hidden  lg:flex items-center justify-center">
-        <div
-          className="flex items-center cursor-pointer justify-center relative z-20 "
-          onClick={handleClickDarkMode}
-        >
-          {activeDarkMode ? (
-            <FaSun color="yellow" size={25}></FaSun>
-          ) : (
-            <MdDarkMode size={25}></MdDarkMode>
-          )}
-        </div>
+        <Darkmod></Darkmod>
       </div>
       <div className="mt-10 hidden font-bold  dark:text-white  lg:flex items-center justify-center">
         <div>

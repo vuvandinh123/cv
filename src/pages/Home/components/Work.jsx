@@ -1,94 +1,16 @@
 import Card from "../../../components/commons/Card";
-import image1 from "../../../assets/screenshot_1705073216.png";
-import { TbBrandVite } from "react-icons/tb";
-import { FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
 import Slider from "react-slick";
 import { NextArrow, PrevArrow } from "../../../components/slick";
+import { useEffect, useState } from "react";
+import { DataWorks } from "../../../assets/data/work";
+import { Link } from "react-router-dom";
 
 const Work = () => {
-  const data = [
-    {
-      name: "Website NFT Collection",
-      image: image1,
-      desc: "su dung tailwindcss",
-      tech: [
-        {
-          name: "ReactJS",
-          icon: <FaReact></FaReact>,
-        },
-        {
-          name: "Tailwind",
-          icon: <SiTailwindcss></SiTailwindcss>,
-        },
-        {
-          name: "ViteJS",
-          icon: <TbBrandVite></TbBrandVite>,
-        },
-      ],
-      link: "https://www.google.com/",
-    },
-    {
-      name: "Website NFT Collection",
-      image: image1,
-      desc: "su dung tailwindcss",
-      tech: [
-        {
-          name: "ReactJS",
-          icon: <FaReact></FaReact>,
-        },
-        {
-          name: "Tailwind",
-          icon: <SiTailwindcss></SiTailwindcss>,
-        },
-        {
-          name: "ViteJS",
-          icon: <TbBrandVite></TbBrandVite>,
-        },
-      ],
-      link: "https://www.google.com/",
-    },
-    {
-      name: "Website Shoe Store",
-      image: image1,
-      desc: "",
-      tech: [
-        {
-          name: "ReactJS",
-          icon: <FaReact></FaReact>,
-        },
-        {
-          name: "Tailwind",
-          icon: <SiTailwindcss></SiTailwindcss>,
-        },
-        {
-          name: "ViteJS",
-          icon: <TbBrandVite></TbBrandVite>,
-        },
-      ],
-      link: "https://www.google.com/",
-    },
-    {
-      name: "Website Ecommerce ",
-      image: image1,
-      desc: "",
-      tech: [
-        {
-          name: "ReactJS",
-          icon: <FaReact></FaReact>,
-        },
-        {
-          name: "Tailwind",
-          icon: <SiTailwindcss></SiTailwindcss>,
-        },
-        {
-          name: "ViteJS",
-          icon: <TbBrandVite></TbBrandVite>,
-        },
-      ],
-      link: "https://www.google.com/",
-    },
-  ];
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const newData = DataWorks.filter((item) => item.isHome === true);
+    setData(newData);
+  }, []);
   const settings = {
     dots: true,
     infinite: false,
@@ -124,31 +46,38 @@ const Work = () => {
     ],
   };
   return (
-    <div className="px-5 my-10 ">
+    <div className="px-5 lg:mt-10 ">
       <div className="flex dark:text-white  justify-center items-center">
         <div className="xl:w-1/2">
-          <h2 id="work" className="text-center text-3xl font-semibold mb-2">
-            My Project
+          <h2
+            id="work"
+            data-aos="fade-up"
+            className="text-center text-3xl font-semibold mb-2"
+          >
+            Experience
           </h2>
-          <p className="text-gray-500 text-center text-sm">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-            placeat soluta maxime porro similique, alias itaque? Temporibus,
-            ducimus? At ipsa id voluptas neque voluptatem, nobis officiis quia
-            soluta aliquid ducimus.
+          <p
+            className="text-gray-500 text-center text-sm"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Projects that I worked on during the years I studied programming
           </p>
         </div>
       </div>
-      <div className="mt-10">
-        <Slider {...settings}>
-          {data.map((item, index) => {
-            return <Card key={index} data={item}></Card>;
-          })}
-        </Slider>
+      <div className="mt-10" data-aos="fade-up" data-aos-delay="300">
+        {data.length > 0 && (
+          <Slider {...settings}>
+            {data?.map((item, index) => {
+              return <Card key={index} data={item}></Card>;
+            })}
+          </Slider>
+        )}
         {/* <div className="grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2"></div> */}
         <div className="flex justify-center mt-10">
-          <button className="mt-5 rounded-md bg-yellow-500 p-2 px-5  text-white">
+          <Link to="/work" className="mt-5 rounded-md bg-yellow-500 p-2 px-5  text-white">
             See more
-          </button>
+          </Link>
         </div>
       </div>
     </div>

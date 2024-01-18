@@ -1,0 +1,17 @@
+export const icons = {
+    facebook: "https://cdn-icons-png.flaticon.com/512/174/174848.png",
+    instagram: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
+    github: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
+    youtube: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
+    download: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
+    ReactJS: "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png",
+    TailwindCSS: "https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png",
+    NodeJS: "https://cdn.icon-icons.com/icons2/2415/PNG/512/nodejs_plain_logo_icon_146409.png",
+    ExpressJS: "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169186.png",
+    Firebase: "https://cdn.icon-icons.com/icons2/2699/PNG/512/firebase_logo_icon_171157.png",
+    Laravel: "https://cdn.icon-icons.com/icons2/2248/PNG/512/laravel_icon_135451.png",
+    "HTML/CSS": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png",
+    PHP: "https://cdn.icon-icons.com/icons2/2415/PNG/512/php_plain_logo_icon_146397.png",
+    Wordpress:"https://cdn.icon-icons.com/icons2/2699/PNG/512/wordpress_logo_icon_167953.png",
+    Bootstrap:"https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_logo_icon_146619.png",
+}

@@ -1,11 +1,11 @@
 
 const Education = () => {
   return (
-    <div className="my-10">
+    <div className=" lg:mt-10">
       <div className="flex justify-center dark:text-white mb-10 items-center">
         <div className="xl:w-1/2 ">
-          <h2 id="education" className="text-center text-3xl font-semibold mb-2">Education</h2>
-          <p className="text-gray-500 text-center text-sm">
+          <h2 id="education" className="text-center text-3xl font-semibold mb-2" data-aos="fade-up" data-aos-delay="100"  >Education</h2>
+          <p className="text-gray-500 text-center text-sm" data-aos="fade-up" data-aos-delay="400" >
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
             placeat soluta maxime porro similique, alias itaque? Temporibus,
             ducimus? At ipsa id voluptas neque voluptatem, nobis officiis quia
@@ -14,7 +14,7 @@ const Education = () => {
         </div>
       </div>
       <div>
-        <div className="bg-white dark:bg-[#1e2329]">
+        <div className="bg-white dark:bg-[#1e2329]" data-aos="fade-up" data-aos-delay="600">
           <ul className="rounded-md shadow-md dark:bg-[#1e2329]  mt-3 p-3">
             <li className="text-xs uppercase text-gray-400 border-b border-gray border-solid py-2 px-5 mb-2">
               2018 - 2021

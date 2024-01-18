@@ -23,6 +23,7 @@ body {
 /* Tùy chỉnh thanh cuộn chính */
 ::-webkit-scrollbar {
   width: 0px; /* Độ rộng của thanh cuộn */
+  height: 0;
 }
 
 /* Tùy chỉnh phần "nút kéo" của thanh cuộn */
