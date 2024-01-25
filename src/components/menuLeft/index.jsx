@@ -1,4 +1,4 @@
-import avatar from "../../assets/Profile.jpg";
+import avatar from "../../assets/dinh1.png";
 import icon1 from "../../assets/Icons.svg";
 import {
   FaFacebookF,
